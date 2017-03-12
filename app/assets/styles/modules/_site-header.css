@@ -1,0 +1,55 @@
+.site-header {
+  padding-top: 24px;
+  padding-bottom: 47px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  transition: all 0.2s ease-in;
+  background-color: $logoYellow;
+
+  @mixin atMedium {
+    background-color: rgba(0, 0, 0, .2);;
+  }
+
+  &__icon {
+    text-indent: -9999px;
+    position: absolute;
+    left: 50%;
+    z-index: 5;
+    top: 0;
+    transform: translateX(-50%) scale(.519) translateY(-64px);
+    background-color: $logoYellow;
+    border:thin solid $shadowGrey;
+    transition: all 0.2s ease-in;
+
+    @mixin atMedium{
+      left: 10%;
+      transform: scale(1) translateX(-50%);
+    }
+  }
+
+  &__profile-link {
+    float: right;
+    position: relative;
+    top: -15px;
+    padding-right: 15px;
+    cursor:pointer;
+    transition: all 0.2s ease-out ;
+    display: inline-block;
+
+    &--hover {
+      transform: scale(1.1);
+    }
+
+    &__image {
+      max-width: 3rem;
+      border-radius: 50%;
+      border: 1.5px solid $shadowGrey;
+      box-shadow: 0 0 0 1.5px $logoYellow,
+                  0 0 0 3px $shadowGrey;
+    }
+
+
+  }
+}

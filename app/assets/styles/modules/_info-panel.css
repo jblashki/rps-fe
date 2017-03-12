@@ -1,0 +1,7 @@
+.info-panel {
+    text-align: center;
+    padding-top: 20px;
+    @minix atMedium {
+      padding-top: 100px;
+    }
+}

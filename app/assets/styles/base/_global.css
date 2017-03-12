@@ -1,0 +1,31 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  color: black;
+  background-color: $background;
+}
+
+.concealable {
+  visibility: inherit;
+  opacity: inherit;
+  display: inherit;
+
+  &--hidden {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: $logoYellow;
+  text-shadow: 2px 2px $shadowGrey;
+}

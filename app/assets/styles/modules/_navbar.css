@@ -1,0 +1,29 @@
+.navbar {
+  padding-bottom: 31px;
+
+  @mixin atMedium {
+    padding-top: 0;
+  }
+
+  &--pull-right {
+    float: right;
+  }
+
+  &__item {
+    list-style: none;
+    position: relative;
+    padding-right: 7px;
+    display: inline-block;        
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    @mixin clearfix;
+  }
+
+  a {
+      text-decoration: none;
+  }
+}
