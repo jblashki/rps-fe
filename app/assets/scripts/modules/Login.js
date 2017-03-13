@@ -9,6 +9,8 @@ class Login {
     this.loginButton = $('#login-btn');
     this.signupButton = $('#signup-btn');
 
+    this.profileButton = $('#profile-btn');
+
     this.logout();
 
     this.events();
@@ -17,6 +19,9 @@ class Login {
   events() {
     this.loginButton.click (this.login.bind(this.loginButton));
     this.signupButton.click (this.signup.bind(this.signupButton));
+
+    /* Temp to allow me to swith between loggedin and loggedout */
+    this.profileButton.click(this.logout);
   }
 
   login() {
